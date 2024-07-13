@@ -1,0 +1,44 @@
+html,body {
+  overflow-x:hidden;
+  box-sizing: border-box;
+}
+
+#container{
+  background: linear-gradient(to right , black , rgb(0, 0, 58));
+}
+footer{
+  background: linear-gradient(to right, rgb(0, 0, 58) , black , rgb(0, 0, 58) , black);
+  animation: anime1 10s linear infinite;
+  background-size: 300% 300%;
+}
+nav{
+  background: linear-gradient(to right, rgb(0, 0, 58) , black , rgb(0, 0, 58) , black);
+  animation: anime1 10s linear infinite;
+  background-size: 300% 300%;
+}
+.leftSection .buttons button{
+  background: linear-gradient(to right , #57e4e4 ,#0050b8);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0 0 100px rgba(255, 0, 0, 0.514);
+  animation : anime 1s infinite alternate;
+  
+ }
+
+@keyframes anime{
+  100%{
+    text-shadow: 0 0 60px rgb(2, 255, 242);
+  }
+}
+@keyframes anime1{
+  0%{
+    background-position:0 50%;
+  }
+  
+  50%{
+    background-position:100% 50%;
+  }
+  100%{
+    background-position:0 50%;
+  }
+}
