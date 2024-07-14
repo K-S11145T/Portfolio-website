@@ -1,9 +1,10 @@
 html,body {
   overflow-x:hidden;
   box-sizing: border-box;
+  background-size: 50% 50%;
 }
 
-#container{
+body{
   background: linear-gradient(to right , black , rgb(0, 0, 58));
 }
 footer{
@@ -11,10 +12,14 @@ footer{
   animation: anime1 10s linear infinite;
   background-size: 300% 300%;
 }
+#container{
+
+}
 nav{
   background: linear-gradient(to right, rgb(0, 0, 58) , black , rgb(0, 0, 58) , black);
   animation: anime1 10s linear infinite;
   background-size: 300% 300%;
+  max-width: 1280px;
 }
 .leftSection .buttons button{
   background: linear-gradient(to right , #57e4e4 ,#0050b8);
