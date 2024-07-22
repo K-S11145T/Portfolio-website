@@ -1,49 +1,84 @@
-html,body {
-  overflow-x:hidden;
+@font-face {
+  font-family: Equinox;
+  src: url("./fonts/Equinox-Typeface/Equinox_Typeface_Dfonts.org/Equinox\ Bold.otf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-size: 50% 50%;
 }
 
-body{
-  background: linear-gradient(to right , black , rgb(0, 0, 58));
-}
-footer{
-  background: linear-gradient(to right, rgb(0, 0, 58) , black , rgb(0, 0, 58) , black);
-  animation: anime1 10s linear infinite;
-  background-size: 300% 300%;
-}
-#container{
+body {
 
+  overflow-x: hidden;
 }
-nav{
-  background: linear-gradient(to right, rgb(0, 0, 58) , black , rgb(0, 0, 58) , black);
-  animation: anime1 10s linear infinite;
-  background-size: 300% 300%;
-  max-width: 1280px;
+#land h1 , h4{
+  font-family: Equinox;
 }
-.leftSection .buttons button{
-  background: linear-gradient(to right , #57e4e4 ,#0050b8);
+#land #name{
+  background: linear-gradient(to right , #B074D8 ,#EE8B90);
   color: transparent;
-  -webkit-background-clip: text;
-  text-shadow: 0 0 100px rgba(255, 0, 0, 0.514);
-  animation : anime 1s infinite alternate;
-  
- }
+ -webkit-background-clip: text;
+ text-shadow: 0 0 100px rgba(255, 0, 0, 0.514);
+ animation : anime 1s infinite alternate;
+}
 
 @keyframes anime{
   100%{
-    text-shadow: 0 0 60px rgb(2, 255, 242);
+    text-shadow: 0 0 60px rgba(25, 0, 255, 0.514);
   }
 }
-@keyframes anime1{
-  0%{
-    background-position:0 50%;
-  }
+.arrow{
+ 
+  margin: 0 1em;
+  height: 50px;
+  color: white;
+  transform: rotate(180deg);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.arrow.active {
+  transform: rotate(0deg);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+#work h1{
+  font-family: Equinox;
+}
+._canvas_container {
+  z-index: 99999 !important; 
+  pointer-events: none;
+}
+
+#name{
+  mix-blend-mode: color-dodge
   
-  50%{
-    background-position:100% 50%;
+}
+#logo1{
+  opacity: 0;
+}
+
+#gojo{
+  
+  animation: gojo 5s infinite ease-in-out;
+}
+
+@keyframes gojo{
+  0% {
+    transform: translateY(0);
+    
   }
-  100%{
-    background-position:0 50%;
+  50% {
+    transform: translateY(15px);
+    
+  }
+  100% {
+    transform: translateY(0);
+    
   }
 }
+
+
