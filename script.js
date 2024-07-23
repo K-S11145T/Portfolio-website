@@ -17,7 +17,7 @@ let tween = gsap
   .totalProgress(0.5);
 
 gsap.set(".marquee_inner", {
-  xPercent: 0,
+  xPercent: -10,
 });
 
 window.addEventListener("scroll", function () {
